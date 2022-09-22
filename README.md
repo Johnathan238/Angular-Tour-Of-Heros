@@ -14,4 +14,4 @@ Enable users to select a hero from a list and edit that hero in the details view
 Format data with pipes.
 Create a shared service to assemble the heroes.
 Use routing to navigate among different views and their components.
-- https://angular.io/tutorial - 
+- https://angular.io/tutorial  
