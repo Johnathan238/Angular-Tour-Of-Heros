@@ -1,9 +1,22 @@
-<h2>{{ heros.name }} Details</h2>
-<p>ID -> {{ heros.id }} </p>
-<p>Name -> {{ heros.name | uppercase }} </p>
+<h2>{{ hero.name }} Details</h2>
+<p>ID -> {{ hero.id }} </p>
+<p>Name -> {{ hero.name | uppercase }} </p>
 
 <div>
   <label for="name">Hero name: </label>
-  <input id="name" [(ngModel)]="heros.name" placeholder="name">
+  <input id="name" [(ngModel)]="hero.name" placeholder="name">
 </div>
 
+
+<div class="heros-list" *ngFor="let hero of heros">
+  <h3>
+    <ul>
+      <li>
+        <button type="button">
+          <span class="badge"> ID -> {{hero.id}} ||</span>
+          <span class="name">Name -> {{hero.name}}</span>
+        </button>
+      </li>
+    </ul>
+  </h3>
+</div>
