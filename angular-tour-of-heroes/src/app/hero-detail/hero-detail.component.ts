@@ -8,7 +8,7 @@ import { Hero } from '../interface/hero';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
-  @Input() hero?: Hero 
+  @Input() hero?: Hero
 
   constructor() { }
 
